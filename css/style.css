@@ -8,8 +8,9 @@
 }
 
 :root {
-  ---white-color: hsl(0, 0%, 100%);
+  ---second-color: hsl(244, 12%, 12%);
   --black-color: hsl(0, 0%, 0%);
+  --principal-color: #4a3fe4;
 }
 
 body {
@@ -25,20 +26,35 @@ body {
 }
 
 .container {
+  display: block;
   width: 100%;
   max-width: 500px;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-  border: solid #fff;
+  /* background-color: transparent; */
+  background-color: hsla(244, 16%, 92%, 0.6);
+  backdrop-filter: blur(30px);
+  /* border: solid #fff; */
+  border: 2px solid hsla(244, 16%, 92%, 0.75);
   border-width: 0.2px;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 35px 100px;
 }
 
 h1 {
-  color: #fff;
-  align-items: center;
+  color: #4a3fe4;
+  font-size: 28px;
   padding-bottom: 15px;
+  align-items: center;
+}
+
+strong {
+  color: hsl(244, 12%, 12%);
+  font-family: Poppins, sans-serif;
+  letter-spacing: normal;
+}
+
+p {
+  color: hsl(244, 12%, 12%);
+  font-size: 15px;
 }
 
 .textfield {
@@ -52,11 +68,11 @@ h1 {
 .textfield > input {
   width: 100%;
   border: none;
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 15px;
   background: transparent;
   backdrop-filter: blur(10px);
-  color: #fff;
+  color: #59585f;
   font-size: 12pt;
   box-shadow: 0px 10px 40px #00000056;
   outline: none;
@@ -64,44 +80,56 @@ h1 {
 }
 
 .textfield > label {
-  color: #f0ffffde;
+  color: #1b1b22;
   margin-bottom: 10px;
-  color: brown;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .textfield > input::placeholder {
-  color: #fff;
+  color: #59585f;
+}
+
+.login_forgot_check-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
 }
 
 .login__check-box {
-  align-items: left;
-  color: var(---white-color);
-  font-size: 0.813rem;
+  font-size: 13px;
   padding: 5px 15px;
+  color: hsl(244, 12%, 12%);
+  font-weight: 500;
+}
+
+.forgot {
+  font-size: 13px;
+  padding: 5px 15px;
+  color: hsl(244, 12%, 12%);
 }
 
 button {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #4a3fe4;
+  color: #fff;
   backdrop-filter: blur(10px);
   border-radius: 25px;
   justify-content: center;
   border: solid transparent;
   font-size: 12pt;
-  color: hsl(0, 0%, 0%);
   padding: 10px 130px;
 }
 
 span {
-  color: hsl(0, 0%, 100%);
+  color: hsl(244, 12%, 12%);
 }
 
 a {
   text-decoration: none;
-  color: hsl(0, 0%, 100%);
+  color: hsl(244, 12%, 12%);
   font-weight: 500;
 }
 
-.login__forgot {
-  color: var(---white-color);
-  font-size: 0.813rem;
+.textfield > input:hover {
+  border: #4a3fe4 solid 2px;
 }
