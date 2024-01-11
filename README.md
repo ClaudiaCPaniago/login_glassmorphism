@@ -1,4 +1,5 @@
 # Login 
+![preview img](/assets/preview.png)
 
 ## :rocket: Tecnologias Utilizadas: <br>
 * HTML 
