@@ -158,3 +158,7 @@ button:hover {
   transform: translateY(-50%); /* Mantém a centralização do ícone */
   margin: 0px 8px;
 }
+
+.btn-continue > button {
+  padding: 10px 112px;
+}
