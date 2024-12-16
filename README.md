@@ -4,11 +4,18 @@ Página de login realizada com a técnica de glassmorphism.
 
 <br>
 
+
+##  Página de login
 ![preview img](/assets/preview.png)
+
+##  Página de cadastro
+![cadastro](assets/cadastro.png)
+
 
 ## :rocket: Tecnologias Utilizadas: <br>
 * HTML 
 * CSS
+* Javascript
   
 ## :memo:  Principais conceitos aplicado ao projeto: <br>
 * Glassmorphism
