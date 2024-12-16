@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-  color: #4a3fe4;
+  color: var(--principal-color);
   font-size: 28px;
   padding-bottom: 15px;
   align-items: center;
@@ -63,9 +63,12 @@ p {
   align-items: flex-start;
   justify-content: center;
   margin: 15px 0px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .textfield > input {
+  display: flex;
   width: 100%;
   border: none;
   border-radius: 25px;
@@ -77,6 +80,7 @@ p {
   box-shadow: 0px 10px 40px #00000056;
   outline: none;
   box-sizing: border-box;
+  padding-left: 43px; /* Espaço à esquerda para o ícone */
 }
 
 .textfield > label {
@@ -132,4 +136,25 @@ a {
 
 .textfield > input:hover {
   border: #4a3fe4 solid 2px;
+}
+
+button:hover {
+  background-color: #3e35d1; /* tom mais escuro do roxo */
+  cursor: pointer;
+}
+
+.textfield > input:focus {
+  border: #4a3fe4 solid 2px;
+  box-shadow: 0px 0px 10px rgba(74, 63, 228, 0.5);
+}
+
+.textfield i {
+  color: hsl(244, 12%, 12%);
+  font-weight: 600;
+  font-size: 15px;
+  position: absolute;
+  left: 15px; /* Ajuste a posição do ícone à esquerda do input */
+  top: 65%; /* Ajuste ligeiro para o ícone descer um pouco */
+  transform: translateY(-50%); /* Mantém a centralização do ícone */
+  margin: 0px 8px;
 }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <title>Login</title>
 </head>
@@ -15,10 +16,13 @@
     <div class="textfield">
       <label for="input-email">Email</label>
       <input type="email" name="email" placeholder="Enter your email">
+      <i class="fa-regular fa-envelope"></i>
     </div>
+
     <div class="textfield">
       <label for="senha">Password</label>
-      <input type="password" name="senha" placeholder="Enter your password">
+      <input type="password" id="senha" placeholder="Enter your password">
+      <i class="fa-solid fa-lock" id="icone-senha" onclick="mostrarSenha()"></i>
     </div>
 
     <div class="login_forgot_check-box">
@@ -35,10 +39,10 @@
       <button>Login</buttom>
     </div>
     <br>
-    <span>Don't have an account? <a href="#">Register</a></span>
+    <span>Don't have an account? <a href="/cadastro.html">Register</a></span>
 
   </div>
-
+  <script src="script.js"></script>
 </body>
 
 </html>
