@@ -1,5 +1,11 @@
 # Login 
 
+Página de login realizada com a técnica de glassmorphism.
+
+<br>
+
+![preview img](/assets/preview.png)
+
 ## :rocket: Tecnologias Utilizadas: <br>
 * HTML 
 * CSS
